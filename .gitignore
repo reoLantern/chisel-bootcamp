@@ -12,3 +12,6 @@
 # Jupyter-scala scripts
 coursier
 almond
+
+.vscode
+.metals

@@ -1,3 +1,9 @@
+计划将这个fork仓库翻译成中文，帮助大家学习chisel。
+
+欢迎大家关注[乘影](https://opengpgpu.org.cn)，一个基于RISC-V向量扩展的开源的GPGPU软硬件实现。[硬件代码](https://github.com/THU-DSP-LAB/ventus-gpgpu)使用chisel撰写。
+
+---
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/freechipsproject/chisel-bootcamp/master)
 
 **_For previous users of the bootcamp, we have upgraded from Scala 2.11 to Scala 2.12. If you are encountering errors, please follow the installation instructions to upgrade to 2.12._**
@@ -6,7 +12,7 @@
 
 Elevate the level of your hardware design from instances to generators!
 This bootcamp teaches you Chisel, a Berkeley hardware construction DSL written in Scala.
-It teaches you Scala along the way, and it frames the learning of Chisel on the idea of *hardware generators*.
+It teaches you Scala along the way, and it frames the learning of Chisel on the idea of _hardware generators_.
 
 ## What you'll learn
 
@@ -31,16 +37,17 @@ If you want to try it out locally, [look at installation instructions here](Inst
 ## Outline
 
 The bootcamp is divided into modules, which are further subdivided.
-This README serves as *Module 0*, an introduction and motivation to learning the material contained within.
-*Module 1* gives a quick introduction to Scala.
+This README serves as _Module 0_, an introduction and motivation to learning the material contained within.
+_Module 1_ gives a quick introduction to Scala.
 It teaches you enough to start writing Chisel, but many more Scala concepts are taught along the way.
-Chisel is introduced in *Module 2*, starting with a hardware example and breaking it down.
-The rest of *Module 2* covers combinational and sequential logic, as well as software and hardware control flow.
-*Module 3* teaches you how to write hardware generators in Chisel that take advantage of Scala's high-level programming language features.
+Chisel is introduced in _Module 2_, starting with a hardware example and breaking it down.
+The rest of _Module 2_ covers combinational and sequential logic, as well as software and hardware control flow.
+_Module 3_ teaches you how to write hardware generators in Chisel that take advantage of Scala's high-level programming language features.
 By the end, you will be able to read and understand most of the [Chisel code base](https://github.com/freechipsproject/chisel3) and begin using [Rocket Chip](https://github.com/freechipsproject/rocket-chip).
-This tutorial *does not* yet cover SBT, build systems, backend flows for FPGA or ASIC processes, or analog circuits.
+This tutorial _does not_ yet cover SBT, build systems, backend flows for FPGA or ASIC processes, or analog circuits.
 
 ## Motivation
+
 All hardware description languages support writing single instances.
 However, writing instances is tedious.
 Why make the same mistakes writing a slightly modified version of something somebody else has likely already designed?
@@ -69,25 +76,26 @@ Learning to write generators is difficult, but we hope this tutorial will pave t
 
 I get the following error upon launching a Scala notebook and Jupyter says that the kernel has crashed:
 
-```
+```text
 Exception in thread "main" java.lang.RuntimeException: java.lang.NullPointerException
-	at jupyter.kernel.server.ServerApp$.apply(ServerApp.scala:174)
-	at jupyter.scala.JupyterScalaApp.delayedEndpoint$jupyter$scala$JupyterScalaApp$1(JupyterScala.scala:93)
-	at jupyter.scala.JupyterScalaApp$delayedInit$body.apply(JupyterScala.scala:13)
+ at jupyter.kernel.server.ServerApp$.apply(ServerApp.scala:174)
+ at jupyter.scala.JupyterScalaApp.delayedEndpoint$jupyter$scala$JupyterScalaApp$1(JupyterScala.scala:93)
+ at jupyter.scala.JupyterScalaApp$delayedInit$body.apply(JupyterScala.scala:13)
   ...
 
 Caused by: java.lang.NullPointerException
-	at ammonite.runtime.Classpath$.classpath(Classpath.scala:31)
-	at ammonite.interp.Interpreter.init(Interpreter.scala:93)
-	at ammonite.interp.Interpreter.processModule(Interpreter.scala:409)
-	at ammonite.interp.Interpreter$$anonfun$10.apply(Interpreter.scala:151)
-	at ammonite.interp.Interpreter$$anonfun$10.apply(Interpreter.scala:148)
+ at ammonite.runtime.Classpath$.classpath(Classpath.scala:31)
+ at ammonite.interp.Interpreter.init(Interpreter.scala:93)
+ at ammonite.interp.Interpreter.processModule(Interpreter.scala:409)
+ at ammonite.interp.Interpreter$$anonfun$10.apply(Interpreter.scala:151)
+ at ammonite.interp.Interpreter$$anonfun$10.apply(Interpreter.scala:148)
   ...
 ```
 
 Make sure that you have **Java 8** selected for running Jupyter (see the instructions above).
 
 ## Contributors
+
 - Stevo Bailey ([stevo@berkeley.edu](mailto:stevo@berkeley.edu))
 - Adam Izraelevitz ([adamiz@berkeley.edu](mailto:azidar@berkeley.edu))
 - Richard Lin ([richard.lin@berkeley.edu](mailto:edwardw@berkeley.edu))
