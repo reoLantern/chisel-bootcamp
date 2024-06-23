@@ -1,6 +1,8 @@
-计划将这个fork仓库翻译成中文，帮助大家学习chisel。
+已经将这个fork仓库翻译成中文，希望能够帮助大家学习chisel。
 
-欢迎大家关注[乘影](https://opengpgpu.org.cn)，一个基于RISC-V向量扩展的开源的GPGPU软硬件实现。[硬件代码](https://github.com/THU-DSP-LAB/ventus-gpgpu)使用chisel撰写。
+欢迎大家关注[乘影](https://opengpgpu.org.cn)，一个基于RISC-V向量扩展的开源的GPGPU软硬件实现。[它的硬件代码](https://github.com/THU-DSP-LAB/ventus-gpgpu)使用chisel撰写。
+
+中文版的即点即用的 playground 在[这里](https://mybinder.org/v2/gh/reoLantern/chisel-bootcamp/HEAD)，不需要任何环境配置。
 
 ---
 
